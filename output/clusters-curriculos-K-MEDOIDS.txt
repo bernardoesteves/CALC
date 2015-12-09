@@ -1,0 +1,251 @@
+1
+Fisica 6.txt
+1
+Farmacia 6.txt
+1
+Rogerio - 14-04.txt
+1
+Quimica 4.txt
+1
+Filosofia 5.txt
+1
+Farmacologia 4.txt
+1
+Farmacia 10.txt
+1
+Ricardo PS - 14-04.txt
+1
+Fisica 10.txt
+1
+Filosofia 3.txt
+1
+Filosofia 6.txt
+1
+Farmacia 5.txt
+1
+Agronomia 3.txt
+1
+Bioquimica 5.txt
+1
+Literatura 10.txt
+1
+Literatura 1.txt
+2
+Agronomia 4.txt
+Agronomia 6.txt
+9
+Aquicultura 7.txt
+Aquicultura 1.txt
+Aquicultura 10.txt
+Aquicultura 2.txt
+Aquicultura 3.txt
+Aquicultura 5.txt
+Aquicultura 6.txt
+Aquicultura 8.txt
+Aquicultura 9.txt
+3
+Aquicultura 4.txt
+Aquicultura 11.txt
+Bioquimica 3.txt
+6
+Eng Alimentos 4.txt
+Eng Alimentos 12.txt
+Eng Alimentos 2.txt
+Eng Alimentos 6.txt
+Eng Alimentos 8.txt
+Eng Alimentos 9.txt
+5
+Eng Civil 11.txt
+Eng Civil 10.txt
+Eng Civil 12.txt
+Eng Civil 2.txt
+Eng Civil 3.txt
+16
+Enfermagem 9.txt
+Ciencias Humanas 9.txt
+Enfermagem 1.txt
+Enfermagem 10.txt
+Enfermagem 11.txt
+Enfermagem 12.txt
+Enfermagem 13.txt
+Enfermagem 14.txt
+Enfermagem 2.txt
+Enfermagem 3.txt
+Enfermagem 4.txt
+Enfermagem 5.txt
+Enfermagem 6.txt
+Enfermagem 7.txt
+Enfermagem 8.txt
+Eng Civil 6.txt
+14
+Eng Mecanica 7.txt
+Eng Civil 1.txt
+Eng Civil 4.txt
+Eng Civil 5.txt
+Eng Civil 8.txt
+Eng Civil 9.txt
+Eng Mecanica 11.txt
+Eng Mecanica 13.txt
+Eng Mecanica 3.txt
+Eng Mecanica 4.txt
+Eng Mecanica 5.txt
+Eng Mecanica 6.txt
+Eng Mecanica 8.txt
+Eng Mecanica 9.txt
+2
+Farmacia 8.txt
+Farmacia 7.txt
+4
+Farmacia 3.txt
+Farmacia 1.txt
+Farmacia 2.txt
+Farmacologia 10.txt
+2
+Farmacologia 3.txt
+Farmacologia 12.txt
+10
+Bioquimica 6.txt
+Bioquimica 1.txt
+Bioquimica 2.txt
+Bioquimica 4.txt
+Bioquimica 8.txt
+Farmacia 11.txt
+Farmacia 12.txt
+Farmacia 9.txt
+Farmacologia 11.txt
+Farmacologia 2.txt
+6
+Farmacologia 5.txt
+Farmacologia 1.txt
+Farmacologia 6.txt
+Farmacologia 7.txt
+Farmacologia 8.txt
+Farmacologia 9.txt
+2
+Filosofia 11.txt
+Filosofia 1.txt
+2
+Filosofia 4.txt
+Filosofia 10.txt
+3
+Fisica 1.txt
+Fisica 3.txt
+Fisica 4.txt
+6
+Fisica 7.txt
+Fisica 11.txt
+Fisica 2.txt
+Fisica 5.txt
+Fisica 8.txt
+Fisica 9.txt
+11
+Agronomia 5.txt
+Agronomia 1.txt
+Agronomia 2.txt
+Agronomia 7.txt
+Agronomia 8.txt
+Ciencias Humanas 3.txt
+Ciencias Humanas 5.txt
+Ciencias Humanas 6.txt
+Historia 1.txt
+Historia 3.txt
+Historia 4.txt
+4
+Historia 9.txt
+Historia 15.txt
+Historia 5.txt
+Historia 6.txt
+13
+Ciencias Humanas 2.txt
+Ciencias Humanas 1.txt
+Ciencias Humanas 10.txt
+Ciencias Humanas 4.txt
+Ciencias Humanas 7.txt
+Ciencias Humanas 8.txt
+Historia 10.txt
+Historia 11.txt
+Historia 12.txt
+Historia 13.txt
+Historia 14.txt
+Historia 2.txt
+Historia 8.txt
+5
+Filosofia 7.txt
+Filosofia 2.txt
+Filosofia 8.txt
+Filosofia 9.txt
+Literatura 5.txt
+10
+Literatura 12.txt
+Historia 7.txt
+Literatura 11.txt
+Literatura 2.txt
+Literatura 3.txt
+Literatura 4.txt
+Literatura 6.txt
+Literatura 7.txt
+Literatura 8.txt
+Literatura 9.txt
+7
+Eduardo - 14-04.txt
+Djones - 09-04.txt
+Eng Mecanica 1.txt
+Eng Mecanica 2.txt
+Guntzel - 09-04.txt
+Guto - 06-04.txt
+Luiz - 09-04.txt
+3
+Eng Mecanica 10.txt
+Patricia V.txt
+Paulo - 09-06.txt
+2
+Quimica 6.txt
+Quimica 3.txt
+8
+Quimica 1.txt
+Bioquimica 7.txt
+Quimica 10.txt
+Quimica 11.txt
+Quimica 12.txt
+Quimica 13.txt
+Quimica 2.txt
+Quimica 5.txt
+3
+Quimica 14.txt
+Quimica 7.txt
+Quimica 8.txt
+8
+Eng Alimentos 3.txt
+Eng Alimentos 1.txt
+Eng Alimentos 10.txt
+Eng Alimentos 11.txt
+Eng Alimentos 5.txt
+Eng Alimentos 7.txt
+Farmacia 4.txt
+Quimica 9.txt
+5
+Luciana Rech - 07-04.txt
+Elder - 14-04.txt
+Jerusa - 06-04.txt
+Patricia Plentz - 07-04.txt
+Ricardo -10-04.txt
+19
+Willrich - 14-04.txt
+Aldo - 06-04.txt
+Carina - 06-04.txt
+Carla - 06-04.txt
+Chris - 09-09.txt
+Custodio - 14-04.txt
+Eng Civil 7.txt
+Eng Mecanica 12.txt
+Fileto.txt
+frank - 09-04.txt
+Lau - 09-04.txt
+Mario - 09-04.txt
+Mauro - 09-04.txt
+Raul - 09-04.txt
+Ricardo S - 14-04.txt
+Ronaldo - 14-04.txt
+Silvia - 14-04.txt
+Vania - 14-04.txt
+west - 9-04.txt
