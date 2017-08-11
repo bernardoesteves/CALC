@@ -17,6 +17,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import calc.exceptions.CalcException;
 import calc.interfacegrafica.Informativo;
 
 public class ManipuladorXML {
@@ -26,7 +27,7 @@ public class ManipuladorXML {
 
 	private static List<Documento> listaDeDocumentos = new ArrayList<Documento>();
 
-	public static List<Documento> geraListaDeDocumentosComTermosDeTagsEspecificas(List<File> listaDeCurriculoXML) {
+	public static List<Documento> geraListaDeDocumentosComTermosDeTagsEspecificas(List<File> listaDeCurriculoXML) throws CalcException {
 		try {
 			for (File curriculo : listaDeCurriculoXML) {
 				if (curriculo.isDirectory())
@@ -54,7 +55,7 @@ public class ManipuladorXML {
 			return listaDeDocumentos;
 
 		} catch (Exception e) {
-			throw new RuntimeException(e);
+			throw new CalcException("Erro durante a criação da lista de tags", e);
 		}
 	}
 
@@ -98,7 +99,7 @@ public class ManipuladorXML {
 		return valorDoField;
 	}
 
-	private static Document criaDocument(File curriculo) {
+	private static Document criaDocument(File curriculo) throws CalcException {
 		DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder documentBuilder;
 		Document document = null;
@@ -108,13 +109,13 @@ public class ManipuladorXML {
 			document.getDocumentElement().normalize();
 		} catch (ParserConfigurationException e) {
 			e.printStackTrace();
-			throw new RuntimeException("Erro na leitura dos currículos");
+			throw new CalcException("Erro na leitura dos currículos", e);
 		} catch (SAXException e) {
 			e.printStackTrace();
-			throw new RuntimeException("Erro na leitura dos currículos");
+			throw new CalcException("Erro na leitura dos currículos", e);
 		} catch (IOException e) {
 			e.printStackTrace();
-			throw new RuntimeException("Erro na leitura dos currículos");
+			throw new CalcException("Erro na leitura dos currículos", e);
 		}
 		return document;
 	}

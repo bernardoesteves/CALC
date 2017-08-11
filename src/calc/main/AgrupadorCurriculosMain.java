@@ -16,6 +16,7 @@ import calc.datastructures.core.CalcFilesUtil;
 import calc.datastructures.core.Documento;
 import calc.datastructures.core.ManipuladorXML;
 import calc.datastructures.core.NormalizadorString;
+import calc.exceptions.CalcException;
 import calc.interfacegrafica.Informativo;
 import calc.utility.clustering.ClusteringUtilityCALC;
 import calc.utility.datatypes.TextFilesUtilityCALC;
@@ -29,7 +30,7 @@ public class AgrupadorCurriculosMain {
 	private static String caminhoDoCurriculosXML;
 	private static CalcFilesUtil calcFilesUtil;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws CalcException {
 		caminhoDoCurriculosXML = (String) args[0];
 		calcFilesUtil = new CalcFilesUtil(caminhoDoCurriculosXML);
 
