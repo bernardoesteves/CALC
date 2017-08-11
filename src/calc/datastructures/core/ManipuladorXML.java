@@ -24,7 +24,7 @@ public class ManipuladorXML {
 
 	private static String nomeAreaDeConhecimento = "NOME-DA-AREA-DO-CONHECIMENTO";
 
-	static List<Documento> listaDeDocumentos = new ArrayList<Documento>();
+	private static List<Documento> listaDeDocumentos = new ArrayList<Documento>();
 
 	public static List<Documento> geraListaDeDocumentosComTermosDeTagsEspecificas(List<File> listaDeCurriculoXML) {
 		try {

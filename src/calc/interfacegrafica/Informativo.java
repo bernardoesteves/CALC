@@ -5,7 +5,7 @@ import java.awt.Component;
 import javax.swing.JLabel;
 
 public class Informativo {
-	static JLabel informativo = new JLabel();
+	private static JLabel informativo = new JLabel();
 
 	public static Component getJLabel() {
 

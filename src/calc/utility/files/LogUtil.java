@@ -6,7 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class LogUtil {
-	static boolean gravaLog = false;
+	private static boolean gravaLog = false;
 
 	public static void gravaLog(String texto) {
 		if (!gravaLog)
