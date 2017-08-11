@@ -25,7 +25,7 @@ public class JaccardSimilarityStrategy {
 
 				ParDocumento parDocumento = new ParDocumento(doc1.getDoc(), doc2.getDoc());
 
-				Double similaridade = computaSimilaridade(doc1, doc2, parDocumento);
+				Double similaridade = computaSimilaridade(doc1, doc2);
 
 				parDocumento.setSimilaridade(similaridade);
 				listaParDocumento.add(parDocumento);
@@ -55,7 +55,7 @@ public class JaccardSimilarityStrategy {
 
 	}
 
-	private Double computaSimilaridade(TermosDocumento doc1, TermosDocumento doc2, ParDocumento parDocumento) {
+	private Double computaSimilaridade(TermosDocumento doc1, TermosDocumento doc2) {
 		{
 			Set<String> palavrasFrequentesDoc1 = doc1.getPalavrasFrequentes();
 			Set<String> palavrasFrequentesDoc2 = doc2.getPalavrasFrequentes();
@@ -67,29 +67,20 @@ public class JaccardSimilarityStrategy {
 			intersect.addAll(palavrasFrequentesDoc1);
 			intersect.retainAll(palavrasFrequentesDoc2);
 
-			// LogUtil.gravaLog(" ========================================================== ");
-			// LogUtil.gravaLog("Intersecção("+parDocumento.getDoc1().getTitle()+" e "+parDocumento.getDoc2().getTitle()+") - total "+intersect.size()+" : "+intersect.toString());
-
 			union.clear();
 
 			union.addAll(palavrasFrequentesDoc1);
 			union.addAll(palavrasFrequentesDoc2);
-			// LogUtil.gravaLog("Uniao("+parDocumento.getDoc1().getTitle()+" e "+parDocumento.getDoc2().getTitle()+") - total "+union.size()+" : "+union.toString());
-			// LogUtil.gravaLog(" ========================================================== ");
 
 			int max = Math.max(palavrasFrequentesDoc1.size(), palavrasFrequentesDoc2.size());
-
-			// LogUtil.gravaLog("["+parDocumento.getDoc1().getTitle()+"("+palavrasFrequentesDoc1.size()+") e "+parDocumento.getDoc2().getTitle()+"("+palavrasFrequentesDoc2.size()+")] intersec("+intersect.size()+") / min("+max+")");
 
 			double resultado = (double) intersect.size() / max;
 
 			if (resultado > maximo && resultado < 1.0) {
 				maximo = resultado;
 			}
-
 			return resultado;
 		}
-
 	}
 
 	public List<ParDocumento> retornaSimilaridadeEOParDeDocumentos() {
