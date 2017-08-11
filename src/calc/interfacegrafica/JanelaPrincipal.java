@@ -15,6 +15,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
 
+import calc.exceptions.CalcException;
 import calc.main.Calc;
 
 import com.jgoodies.forms.builder.PanelBuilder;
@@ -86,6 +87,9 @@ public class JanelaPrincipal extends JFrame {
 							Desktop.getDesktop().open(new File(caminhoDiretorio.getText() + File.separator + "Clusters"));
 							Dialog.alerta("Os currículos foram agrupados com sucesso!");
 						} catch (IOException e) {
+							e.printStackTrace();
+							Dialog.erro(e.getMessage());
+						} catch (CalcException e) {
 							e.printStackTrace();
 							Dialog.erro(e.getMessage());
 						}

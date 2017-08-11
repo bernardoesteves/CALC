@@ -26,8 +26,8 @@ import datastructures.core.DataCluster;
 import datastructures.core.Matrix2D;
 
 public class AgrupadorCurriculosMain {
-	static String caminhoDoCurriculosXML;
-	static CalcFilesUtil calcFilesUtil;
+	private static String caminhoDoCurriculosXML;
+	private static CalcFilesUtil calcFilesUtil;
 
 	public static void main(String[] args) {
 		caminhoDoCurriculosXML = (String) args[0];

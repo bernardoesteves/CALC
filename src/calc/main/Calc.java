@@ -16,6 +16,7 @@ import calc.datastructures.core.CalcFilesUtil;
 import calc.datastructures.core.Documento;
 import calc.datastructures.core.ManipuladorXML;
 import calc.datastructures.core.NormalizadorString;
+import calc.exceptions.CalcException;
 import calc.interfacegrafica.Informativo;
 import calc.utility.clustering.ClusteringUtilityCALC;
 import calc.utility.datatypes.TextFilesUtilityCALC;
@@ -26,14 +27,14 @@ import datastructures.core.DataCluster;
 import datastructures.core.Matrix2D;
 
 public class Calc {
-	String caminhoDosCurriculosXML;
-	CalcFilesUtil calcFilesUtil;
+	private String caminhoDosCurriculosXML;
+	private CalcFilesUtil calcFilesUtil;
 
 	public Calc(String caminhoDosCurriculosXML) {
 		this.caminhoDosCurriculosXML = caminhoDosCurriculosXML;
 	}
 
-	public void agrupaCurriculos() {
+	public void agrupaCurriculos() throws CalcException {
 		try {
 			calcFilesUtil = new CalcFilesUtil(caminhoDosCurriculosXML);
 			List<File> listaDeCurriculoXML = calcFilesUtil.getCurriculosXML();
@@ -45,7 +46,7 @@ public class Calc {
 			String threshold = "0.5";
 			geraClusters(Double.parseDouble(threshold), listaDeDocumentosComTermosDeTagsEspecificas);
 		} catch (Exception e) {
-			throw new RuntimeException(e);
+			throw new CalcException("Ocorreu um erro no agrupador de currículos. ", e);
 		}
 
 	}

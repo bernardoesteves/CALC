@@ -81,12 +81,9 @@ public class ManipuladorXML {
 		for (int i = 0; i < atributos.getLength(); i++) {
 			Attr atributo = (Attr) atributos.item(i);
 
-			if (atributo.getNodeName().equals(nomeAreaDeConhecimento) && !atributo.getValue().equals("")) {
-				if (!listaAreaDeConhecimento.contains(atributo.getValue())) {
-					if (atributo.getOwnerElement().getParentNode().getParentNode().getParentNode().getNodeName().equals("FORMACAO-ACADEMICA-TITULACAO")) {
-						listaAreaDeConhecimento.add(atributo.getValue());
-					}
-				}
+			boolean areaDeConhecimentoEhValida = atributo.getNodeName().equals(nomeAreaDeConhecimento) && !atributo.getValue().equals("") && !listaAreaDeConhecimento.contains(atributo.getValue()) && atributo.getOwnerElement().getParentNode().getParentNode().getParentNode().getNodeName().equals("FORMACAO-ACADEMICA-TITULACAO");
+			if (areaDeConhecimentoEhValida) {
+				listaAreaDeConhecimento.add(atributo.getValue());
 			}
 
 			for (String atributoEspecifico : atributosEspecificos) {
